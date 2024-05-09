@@ -7,9 +7,11 @@ def handle_post():
     # Get the plain text data from the POST request
     data = request.data.decode('utf-8')
     
-    # Print the received data to the console
-    print("Received POST request:")
-    print(data)
+    # Get the IP address of the sender
+    ip_address = request.remote_addr
+    
+    # Print the received data and IP address to the console
+    print(f"Received POST request from {ip_address}: {data}")
     
     # You can perform further processing with the received data here
     
