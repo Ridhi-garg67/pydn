@@ -16,4 +16,4 @@ def handle_post():
     return 'Received POST request successfully!', 200
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3000)
+    app.run(debug=True)
